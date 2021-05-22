@@ -1,11 +1,19 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 24100,
-	"name": "mountain",
+	"name": "Conquer the Mountain",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
 		{
 			"type": "plugin",
 			"id": "Sprite",
@@ -16,16 +24,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "NinePatch",
-			"name": "9-patch",
+			"id": "Keyboard",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"version": "r241",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r241",
 			"bundled": false
@@ -48,22 +56,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
-			"author": "Scirra",
-			"version": "r241",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Tween",
-			"name": "Tween",
-			"author": "Scirra",
-			"version": "r241",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -72,26 +64,31 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
 			"author": "Scirra",
 			"version": "r241",
 			"bundled": false
 		}
 	],
-	"uniqueId": "5zl72tdwnqx",
+	"uniqueId": "ipfj5ulocnt",
 	"objectTypes": {
 		"items": [
-			"Sprite",
-			"Sprite2",
-			"9patch",
-			"Climb",
-			"En_Beetle",
-			"Spike",
-			"Sprite3",
-			"Sprite4",
-			"backround",
-			"text"
+			"BackgroundTile",
+			"Player",
+			"SolidTile",
+			"MovingSolidTile",
+			"JumpThruTile",
+			"Keyboard",
+			"Text"
 		],
 		"subfolders": []
 	},
@@ -103,13 +100,13 @@
 	},
 	"layouts": {
 		"items": [
-			"backround"
+			"Layout 1"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"event 1"
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -139,7 +136,7 @@
 				{
 					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 574134662212603,
+					"sid": 722691907823213,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -147,15 +144,15 @@
 				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 509649238511560,
+					"sid": 689526018594622,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
 				},
 				{
-					"name": "icon-64.png",
+					"name": "icon-114.png",
 					"type": "image/png",
-					"sid": 140201320722173,
+					"sid": 394214368038203,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -163,15 +160,15 @@
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 836450032795995,
+					"sid": 989060634818628,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
 				},
 				{
-					"name": "icon-512.png",
+					"name": "icon-256.png",
 					"type": "image/png",
-					"sid": 269611718565596,
+					"sid": 908049172910114,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -179,17 +176,9 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 971051062812517,
+					"sid": 354167225270812,
 					"icon-info": {
 						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 962085767694340,
-					"icon-info": {
-						"purpose": "app-icon"
 					}
 				}
 			],
@@ -241,7 +230,7 @@
 			0
 		],
 		"useHighDpi": true,
-		"orientations": "landscape",
+		"orientations": "any",
 		"enableWebGL": true,
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
@@ -256,7 +245,7 @@
 		"enhancedAccelerationPrecision": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 854,
+	"viewportWidth": 640,
 	"viewportHeight": 480,
 	"firstLayout": null
 }
