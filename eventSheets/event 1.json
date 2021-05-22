@@ -1,0 +1,236 @@
+{
+	"name": "event 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite",
+					"sid": 146597873123480,
+					"parameters": {
+						"object": "Climb"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite",
+					"sid": 154097220655667,
+					"behaviorType": "8方向",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite",
+					"sid": 921257460233595,
+					"behaviorType": "平台",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 295628252577580
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite",
+					"sid": 697319131865285,
+					"parameters": {
+						"object": "Climb"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite",
+					"sid": 774542865342826,
+					"behaviorType": "8方向",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite",
+					"sid": 592325447525433,
+					"behaviorType": "平台",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 152067292947504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 135165797973404,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Sprite3",
+					"sid": 339068543159031,
+					"parameters": {
+						"instance-variable": "Checkpoint",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 633404641571022
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 517828427522024,
+					"parameters": {
+						"object": "Spike"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 966392319000639,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Sprite3",
+							"sid": 830156821038947,
+							"parameters": {
+								"instance-variable": "Checkpoint"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Sprite",
+							"sid": 643975497266366,
+							"parameters": {
+								"object": "Sprite3",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 700885221822648
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Sprite3",
+							"sid": 580008463204402,
+							"parameters": {
+								"instance-variable": "Checkpoint"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite",
+							"sid": 397589922631564,
+							"parameters": {
+								"x": "188",
+								"y": "798"
+							}
+						}
+					],
+					"sid": 356575216138149
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite",
+					"sid": 104674656412970,
+					"parameters": {
+						"object": "En_Beetle"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 339237033871231,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Sprite3",
+							"sid": 847516832940673,
+							"parameters": {
+								"instance-variable": "Checkpoint"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Sprite",
+							"sid": 703734488083634,
+							"parameters": {
+								"object": "Sprite3",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 642436656008686
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Sprite3",
+							"sid": 746844705522949,
+							"parameters": {
+								"instance-variable": "Checkpoint"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite",
+							"sid": 732355788667313,
+							"parameters": {
+								"x": "188",
+								"y": "798"
+							}
+						}
+					],
+					"sid": 561339051622113
+				}
+			]
+		}
+	],
+	"sid": 399544292977929
+}
