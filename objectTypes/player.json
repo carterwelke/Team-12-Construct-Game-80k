@@ -29,25 +29,25 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1579670,
+						"imageSpriteId": 4147559,
 						"collisionPoly": {
 							"points": [
-								0.21875000000000003,
-								0.28181818181818163,
-								0.5125,
-								0.16363636363636364,
-								0.7625000000000002,
-								0.2909090909090904,
-								0.7562500000000004,
-								0.5909090909090889,
-								0.7875000000000002,
+								0.21250000000000002,
+								0.3136363636363633,
+								0.5,
+								0.18181818181818182,
+								0.7499999999999998,
+								0.2999999999999999,
+								0.7375,
+								0.6045454545454545,
+								0.7937500000000001,
 								1,
-								0.48750000000000004,
+								0.5,
 								1,
-								0.21875000000000006,
+								0.22500000000000003,
 								1,
-								0.21874999999999997,
-								0.586363636363636
+								0.2625,
+								0.6136363636363635
 							]
 						},
 						"useCollisionPoly": true,
@@ -56,6 +56,242 @@
 				],
 				"sid": 734810610482486,
 				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 80,
+						"height": 110,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7207659,
+						"collisionPoly": {
+							"points": [
+								0.21250000000000002,
+								0.3136363636363633,
+								0.5,
+								0.18181818181818182,
+								0.7499999999999998,
+								0.2999999999999999,
+								0.7375,
+								0.6045454545454545,
+								0.7937500000000001,
+								1,
+								0.5,
+								1,
+								0.22500000000000003,
+								1,
+								0.2625,
+								0.6136363636363635
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 80,
+						"height": 110,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2888577,
+						"collisionPoly": {
+							"points": [
+								0.21250000000000002,
+								0.3136363636363633,
+								0.5,
+								0.18181818181818182,
+								0.7499999999999998,
+								0.2999999999999999,
+								0.7375,
+								0.6045454545454545,
+								0.7937500000000001,
+								1,
+								0.5,
+								1,
+								0.22500000000000003,
+								1,
+								0.2625,
+								0.6136363636363635
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 80,
+						"height": 110,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1637863,
+						"collisionPoly": {
+							"points": [
+								0.21250000000000002,
+								0.3136363636363633,
+								0.5,
+								0.18181818181818182,
+								0.7499999999999998,
+								0.2999999999999999,
+								0.7375,
+								0.6045454545454545,
+								0.7937500000000001,
+								1,
+								0.5,
+								1,
+								0.22500000000000003,
+								1,
+								0.2625,
+								0.6136363636363635
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 607332491886018,
+				"name": "Walk",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 80,
+						"height": 110,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2789341,
+						"collisionPoly": {
+							"points": [
+								0.21250000000000002,
+								0.3136363636363633,
+								0.5,
+								0.18181818181818182,
+								0.7499999999999998,
+								0.2999999999999999,
+								0.7375,
+								0.6045454545454545,
+								0.7937500000000001,
+								1,
+								0.5,
+								1,
+								0.22500000000000003,
+								1,
+								0.2625,
+								0.6136363636363635
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 430641379351548,
+				"name": "Jump",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 80,
+						"height": 110,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2115373,
+						"collisionPoly": {
+							"points": [
+								0.21250000000000002,
+								0.3136363636363633,
+								0.5,
+								0.18181818181818182,
+								0.7499999999999998,
+								0.2999999999999999,
+								0.7375,
+								0.6045454545454545,
+								0.7937500000000001,
+								1,
+								0.5,
+								1,
+								0.22500000000000003,
+								1,
+								0.2625,
+								0.6136363636363635
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 368001048294619,
+				"name": "Hang",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 80,
+						"height": 110,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5806091,
+						"collisionPoly": {
+							"points": [
+								0.28750000000000014,
+								0.4499999999999996,
+								0.49374999999999997,
+								0.3999999999999998,
+								0.7249999999999999,
+								0.4409090909090909,
+								0.7375,
+								0.6045454545454545,
+								0.7937500000000001,
+								1,
+								0.5,
+								1,
+								0.22500000000000003,
+								1,
+								0.2625,
+								0.6136363636363635
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 677491011083961,
+				"name": "Duck",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

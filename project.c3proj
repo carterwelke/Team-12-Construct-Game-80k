@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 24100,
-	"name": "Conquer the Mountain",
+	"name": "Platformer template",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -79,7 +79,7 @@
 			"bundled": false
 		}
 	],
-	"uniqueId": "ipfj5ulocnt",
+	"uniqueId": "nwu3pfhwncv",
 	"objectTypes": {
 		"items": [
 			"BackgroundTile",
@@ -88,7 +88,8 @@
 			"MovingSolidTile",
 			"JumpThruTile",
 			"Keyboard",
-			"Text"
+			"Text",
+			"tree"
 		],
 		"subfolders": []
 	},
