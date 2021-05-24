@@ -76,6 +76,35 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+					"uid": 25,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 178,
+						"y": 227,
+						"width": 115.16583883049132,
+						"height": 308.6919391332757,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "tree",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
 					"uid": 24,
 					"instanceVariables": {},
 					"behaviors": {},
@@ -130,7 +159,7 @@
 					},
 					"world": {
 						"x": 119,
-						"y": 857,
+						"y": 888,
 						"width": 80,
 						"height": 110,
 						"originX": 0.5,
@@ -461,8 +490,8 @@
 						}
 					},
 					"world": {
-						"x": 619,
-						"y": 482,
+						"x": 617,
+						"y": 449,
 						"width": 372.034545898,
 						"height": 32,
 						"originX": 0,
@@ -473,7 +502,7 @@
 							1,
 							1
 						],
-						"angle": 6.279799630454445,
+						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -501,8 +530,8 @@
 						}
 					},
 					"world": {
-						"x": 522,
-						"y": 450,
+						"x": 511,
+						"y": 383,
 						"width": 96,
 						"height": 32,
 						"originX": 0,
@@ -541,8 +570,8 @@
 						}
 					},
 					"world": {
-						"x": 339,
-						"y": 356,
+						"x": 229,
+						"y": 447,
 						"width": 219,
 						"height": 32,
 						"originX": 0,
@@ -553,7 +582,7 @@
 							1,
 							1
 						],
-						"angle": 0.453596234,
+						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -580,8 +609,8 @@
 						}
 					},
 					"world": {
-						"x": 160,
-						"y": 224,
+						"x": 127,
+						"y": 320,
 						"width": 96,
 						"height": 16,
 						"originX": 0,
@@ -620,8 +649,8 @@
 						}
 					},
 					"world": {
-						"x": 160,
-						"y": 336,
+						"x": 127,
+						"y": 383,
 						"width": 96,
 						"height": 32,
 						"originX": 0,
@@ -659,8 +688,8 @@
 						}
 					},
 					"world": {
-						"x": 320,
-						"y": 160,
+						"x": 127,
+						"y": 244,
 						"width": 96,
 						"height": 16,
 						"originX": 0,
@@ -698,8 +727,8 @@
 						}
 					},
 					"world": {
-						"x": 512,
-						"y": 128,
+						"x": 127,
+						"y": 170,
 						"width": 96,
 						"height": 16,
 						"originX": 0,
@@ -752,8 +781,8 @@
 						}
 					},
 					"world": {
-						"x": 752,
-						"y": 160,
+						"x": 416,
+						"y": 159,
 						"width": 128,
 						"height": 32,
 						"originX": 0,
@@ -791,8 +820,8 @@
 						}
 					},
 					"world": {
-						"x": 1056,
-						"y": 192,
+						"x": 1141,
+						"y": 416,
 						"width": 96,
 						"height": 16,
 						"originX": 0,
@@ -845,8 +874,8 @@
 						}
 					},
 					"world": {
-						"x": 928,
-						"y": 288,
+						"x": 747,
+						"y": 167,
 						"width": 96,
 						"height": 16,
 						"originX": 0,
@@ -922,6 +951,52 @@
 						"height": 260,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "En_Beetle",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"instanceVariables": {
+						"Direction": ""
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 318,
+						"y": 446,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,

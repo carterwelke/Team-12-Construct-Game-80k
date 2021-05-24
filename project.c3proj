@@ -89,7 +89,10 @@
 			"JumpThruTile",
 			"Keyboard",
 			"Text",
-			"tree"
+			"tree",
+			"En_Beetle",
+			"Climb",
+			"Spike"
 		],
 		"subfolders": []
 	},

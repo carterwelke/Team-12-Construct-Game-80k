@@ -1,0 +1,33 @@
+{
+	"name": "Climb",
+	"plugin-id": "TiledBg",
+	"sid": 700358088311395,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Ladder",
+			"type": "boolean",
+			"desc": "",
+			"sid": 886665829255802
+		},
+		{
+			"name": "Vine",
+			"type": "boolean",
+			"desc": "",
+			"sid": 202645433331320
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2436774,
+		"useCollisionPoly": true
+	}
+}
