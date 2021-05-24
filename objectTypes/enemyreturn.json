@@ -1,20 +1,14 @@
 {
-	"name": "Climb",
+	"name": "enemyreturn",
 	"plugin-id": "TiledBg",
-	"sid": 700358088311395,
+	"sid": 216487429144626,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "Ladder",
+			"name": "Mirror",
 			"type": "boolean",
 			"desc": "",
-			"sid": 886665829255802
-		},
-		{
-			"name": "Vine",
-			"type": "boolean",
-			"desc": "",
-			"sid": 202645433331320
+			"sid": 544303426891386
 		}
 	],
 	"behaviorTypes": [],
@@ -27,7 +21,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 1043557,
+		"imageSpriteId": 1548825,
 		"useCollisionPoly": true
 	}
 }

@@ -9,6 +9,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 715738906875350
+		},
+		{
+			"name": "InitialX",
+			"type": "number",
+			"desc": "",
+			"sid": 676527595264746
 		}
 	],
 	"behaviorTypes": [
@@ -16,6 +22,11 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 995104618199626
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 322271882377204
 		}
 	],
 	"effectTypes": [],

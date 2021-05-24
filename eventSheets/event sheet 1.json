@@ -206,20 +206,20 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 725059394584430,
-					"parameters": {
-						"object": "En_Beetle"
-					}
-				},
-				{
 					"id": "compare-y",
 					"objectClass": "Player",
 					"sid": 564820914778219,
 					"parameters": {
 						"comparison": 4,
 						"y-co-ordinate": "LayoutHeight"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 966842440115719,
+					"parameters": {
+						"object": "En_Beetle"
 					}
 				}
 			],
@@ -305,10 +305,263 @@
 						"animation": "\"Default\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Player",
+					"sid": 597746436518865,
+					"parameters": {
+						"angle": "0"
+					}
 				}
 			],
 			"sid": 328264111783852,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Player",
+					"sid": 863838011568683,
+					"behaviorType": "8Direction"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 767167552355125,
+					"parameters": {
+						"animation": "\"Hang\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Player",
+					"sid": 959673343013941,
+					"parameters": {
+						"angle": "0"
+					}
+				}
+			],
+			"sid": 777412942279423
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-mirrored",
+					"objectClass": "En_Beetle",
+					"sid": 725890344058638,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "En_Beetle",
+					"sid": 859214680072572,
+					"parameters": {
+						"distance": "1"
+					}
+				}
+			],
+			"sid": 518106597303182
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-mirrored",
+					"objectClass": "En_Beetle",
+					"sid": 384728845166079
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "En_Beetle",
+					"sid": 949019245941049,
+					"parameters": {
+						"distance": "-1"
+					}
+				}
+			],
+			"sid": 581952340256088
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "En_Beetle",
+					"sid": 684601433676321,
+					"parameters": {
+						"object": "enemyreturn"
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "En_Beetle",
+					"sid": 566165905407403,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "En_Beetle",
+					"sid": 971762545675245,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "En_Beetle",
+					"sid": 291041247225530,
+					"parameters": {
+						"x": "Self.X - 1"
+					}
+				}
+			],
+			"sid": 122758760486510
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "En_Beetle",
+					"sid": 559340638957958,
+					"parameters": {
+						"object": "enemyreturn"
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "En_Beetle",
+					"sid": 642478440170964
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "En_Beetle",
+					"sid": 903146193218253,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "En_Beetle",
+					"sid": 657252088993437,
+					"parameters": {
+						"x": "Self.X + 1"
+					}
+				}
+			],
+			"sid": 708276579925994
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 680707321977893,
+					"parameters": {
+						"object": "Climb"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-y",
+					"objectClass": "Player",
+					"sid": 421821356444565,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 658345682494004,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 254489375767796,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 500769641001525
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 250180916383356,
+					"parameters": {
+						"object": "Climb"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "Player",
+					"sid": 480462713544027,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"vector-x": "0"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Player",
+					"sid": 634699497159936,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"vector-y": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 209850453650314,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 416246794621826,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 286834098164025
 		}
 	],
 	"sid": 576052392024176
