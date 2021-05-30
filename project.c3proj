@@ -39,6 +39,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -101,7 +109,8 @@
 			"En_Beetle",
 			"Climb",
 			"Spike",
-			"enemyreturn"
+			"enemyreturn",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -129,11 +138,38 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "444666__markagames__walking.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 507660537900545
+				},
+				{
+					"name": "344502__sharesynth__jump03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 831169701146395
+				},
+				{
+					"name": "491179__sidequesting__climbingdownfromtree.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 467058238060346
+				},
+				{
+					"name": "360662__inspectorj__falling-comedic-a (mp3cut.net).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 259334994417011
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Podington Bear - Ice Climb.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 153739581887089
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

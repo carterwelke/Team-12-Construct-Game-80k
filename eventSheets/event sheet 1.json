@@ -213,14 +213,6 @@
 						"comparison": 4,
 						"y-co-ordinate": "LayoutHeight"
 					}
-				},
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 966842440115719,
-					"parameters": {
-						"object": "En_Beetle"
-					}
 				}
 			],
 			"actions": [
@@ -228,6 +220,17 @@
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 541417716131689
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 213217035456059,
+					"parameters": {
+						"audio-file": "360662__inspectorj__falling-comedic-a (mp3cut.net)",
+						"loop": "not-looping",
+						"volume": "-15",
+						"tag-optional": "\"Falling\""
+					}
 				}
 			],
 			"sid": 301769199928821,
@@ -252,6 +255,17 @@
 						"animation": "\"Jump\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 351726257598380,
+					"parameters": {
+						"audio-file": "344502__sharesynth__jump03",
+						"loop": "not-looping",
+						"volume": "-20",
+						"tag-optional": "\"Jump\""
+					}
 				}
 			],
 			"sid": 609284588829325
@@ -264,6 +278,13 @@
 					"objectClass": "Player",
 					"sid": 292762188998432,
 					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "Player",
+					"sid": 341631114637196,
+					"behaviorType": "8Direction",
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -275,10 +296,20 @@
 						"animation": "\"Walk\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 578859285136324,
+					"parameters": {
+						"audio-file": "444666__markagames__walking",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Walk\""
+					}
 				}
 			],
-			"sid": 362491368676232,
-			"isOrBlock": true
+			"sid": 362491368676232
 		},
 		{
 			"eventType": "block",
@@ -312,6 +343,22 @@
 					"sid": 597746436518865,
 					"parameters": {
 						"angle": "0"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 125268705423296,
+					"parameters": {
+						"tag": "\"Jump\""
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 187384265533902,
+					"parameters": {
+						"tag": "\"Walk\""
 					}
 				}
 			],
@@ -562,6 +609,78 @@
 				}
 			],
 			"sid": 286834098164025
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 152068106435775
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 965148549783837,
+					"parameters": {
+						"audio-file": "Podington Bear - Ice Climb",
+						"loop": "looping",
+						"volume": "-5",
+						"tag-optional": "\"bgm\""
+					}
+				}
+			],
+			"sid": 259376653812363
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Player",
+					"sid": 926082950697845,
+					"behaviorType": "8Direction"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 119026753186472,
+					"parameters": {
+						"audio-file": "491179__sidequesting__climbingdownfromtree",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Climb\""
+					}
+				}
+			],
+			"sid": 114219858266768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 343562540496384,
+					"behaviorType": "8Direction",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 347188149373586,
+					"parameters": {
+						"tag": "\"Climb\""
+					}
+				}
+			],
+			"sid": 879434066259614
 		}
 	],
 	"sid": 576052392024176
