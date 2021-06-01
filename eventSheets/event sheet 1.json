@@ -681,6 +681,39 @@
 				}
 			],
 			"sid": 879434066259614
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 156932595493718,
+					"parameters": {
+						"object": "Flag"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Flag",
+					"sid": 917544974141241,
+					"parameters": {
+						"animation": "\"Victory\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text",
+					"sid": 169639062791623,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 879009782780421
 		}
 	],
 	"sid": 576052392024176

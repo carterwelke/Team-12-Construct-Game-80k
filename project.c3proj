@@ -110,7 +110,8 @@
 			"Climb",
 			"Spike",
 			"enemyreturn",
-			"Audio"
+			"Audio",
+			"Flag"
 		],
 		"subfolders": []
 	},
