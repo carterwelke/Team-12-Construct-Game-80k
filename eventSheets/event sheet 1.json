@@ -130,6 +130,31 @@
 		},
 		{
 			"eventType": "comment",
+			"text": "Press R to restart"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 428399577437160,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 300194657459372
+				}
+			],
+			"sid": 627409062924780
+		},
+		{
+			"eventType": "comment",
 			"text": "Mirror the player's image so they appear facing the right way when moving left or right."
 		},
 		{
@@ -217,24 +242,57 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 541417716131689
-				},
-				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 213217035456059,
+					"sid": 246164629131601,
 					"parameters": {
 						"audio-file": "360662__inspectorj__falling-comedic-a (mp3cut.net)",
 						"loop": "not-looping",
 						"volume": "-15",
 						"tag-optional": "\"Falling\""
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 733456307613984,
+					"parameters": {
+						"tag": "\"bgm\""
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 541417716131689
 				}
 			],
 			"sid": 301769199928821,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "Touch the enemy, you DIE"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 919750061908358,
+					"parameters": {
+						"object": "En_Beetle"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 699926785020741
+				}
+			],
+			"sid": 591620882828881
 		},
 		{
 			"eventType": "block",
@@ -392,9 +450,74 @@
 					"parameters": {
 						"angle": "0"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 752319063494149,
+					"parameters": {
+						"tag": "\"Walk\""
+					}
 				}
 			],
 			"sid": 777412942279423
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Player",
+					"sid": 525615260825656,
+					"behaviorType": "8Direction"
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 484684732635557,
+					"parameters": {
+						"tag": "\"Climb\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 912301662500663,
+					"parameters": {
+						"audio-file": "491179__sidequesting__climbingdownfromtree",
+						"loop": "not-looping",
+						"volume": "60",
+						"tag-optional": "\"Climb\""
+					}
+				}
+			],
+			"sid": 796724692993767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 616730748222426,
+					"behaviorType": "8Direction",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 959982178722787,
+					"parameters": {
+						"tag": "\"Climb\""
+					}
+				}
+			],
+			"sid": 564579490030431
 		},
 		{
 			"eventType": "block",
@@ -638,54 +761,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-enabled",
-					"objectClass": "Player",
-					"sid": 926082950697845,
-					"behaviorType": "8Direction"
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 119026753186472,
-					"parameters": {
-						"audio-file": "491179__sidequesting__climbingdownfromtree",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"Climb\""
-					}
-				}
-			],
-			"sid": 114219858266768
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-moving",
-					"objectClass": "Player",
-					"sid": 343562540496384,
-					"behaviorType": "8Direction",
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 347188149373586,
-					"parameters": {
-						"tag": "\"Climb\""
-					}
-				}
-			],
-			"sid": 879434066259614
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Player",
 					"sid": 156932595493718,
@@ -710,6 +785,25 @@
 					"sid": 169639062791623,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 195338841496809,
+					"parameters": {
+						"tag": "\"bgm\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 140350587099478,
+					"parameters": {
+						"audio-file": "433702__dersuperanton__congratulations-deep-voice",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Congraduation\""
 					}
 				}
 			],

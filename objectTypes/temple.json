@@ -1,0 +1,20 @@
+{
+	"name": "Temple",
+	"plugin-id": "TiledBg",
+	"sid": 450104142018577,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 223,
+		"height": 131,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7135972,
+		"useCollisionPoly": true
+	}
+}

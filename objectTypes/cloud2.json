@@ -1,0 +1,20 @@
+{
+	"name": "Cloud2",
+	"plugin-id": "TiledBg",
+	"sid": 822017777888384,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 238,
+		"height": 135,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4392415,
+		"useCollisionPoly": true
+	}
+}
