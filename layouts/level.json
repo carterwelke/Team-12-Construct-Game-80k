@@ -1,5 +1,5 @@
 {
-	"name": "Layout 1",
+	"name": "Level",
 	"layers": [
 		{
 			"name": "Background",
@@ -1895,8 +1895,8 @@
 						}
 					},
 					"world": {
-						"x": 59,
-						"y": 284,
+						"x": 60,
+						"y": 289,
 						"width": 103.66605901587948,
 						"height": 4.867254183655291,
 						"originX": 0,
@@ -1973,8 +1973,8 @@
 						}
 					},
 					"world": {
-						"x": 81,
-						"y": 124,
+						"x": 78,
+						"y": 114,
 						"width": 57.211517213298535,
 						"height": 3.3437465259495998,
 						"originX": 0,
@@ -2502,9 +2502,9 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Arrow keys or WASD to move",
+						"text": "Arrow keys to move R to reset",
 						"enable-bbcode": false,
-						"font": "Arial",
+						"font": "Broadway",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -2525,10 +2525,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 5,
-						"y": 3308,
-						"width": 352,
-						"height": 32,
+						"x": 9,
+						"y": 3178,
+						"width": 168,
+						"height": 43,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -4581,7 +4581,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1082,
+						"x": 1094,
 						"y": 491,
 						"width": 37,
 						"height": 100,
@@ -5006,8 +5006,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 663,
-						"y": 75,
+						"x": 676,
+						"y": 76,
 						"width": 37,
 						"height": 100,
 						"originX": 0,
@@ -5041,7 +5041,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 471,
+						"x": 459,
 						"y": 76,
 						"width": 37,
 						"height": 100,

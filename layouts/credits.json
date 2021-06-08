@@ -1,5 +1,5 @@
 {
-	"name": "Layout 3",
+	"name": "Credits",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -280,5 +280,5 @@
 	"width": 1280,
 	"height": 960,
 	"unboundedScrolling": false,
-	"eventSheet": "Event sheet 3"
+	"eventSheet": null
 }
