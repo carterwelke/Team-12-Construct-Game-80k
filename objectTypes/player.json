@@ -270,7 +270,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5806091,
+						"imageSpriteId": 6428233,
 						"collisionPoly": {
 							"points": [
 								0.28750000000000014,
@@ -296,7 +296,7 @@
 					}
 				],
 				"sid": 677491011083961,
-				"name": "Duck",
+				"name": "Hurt",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

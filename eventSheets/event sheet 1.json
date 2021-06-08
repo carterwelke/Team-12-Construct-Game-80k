@@ -277,9 +277,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-overlapping-another-object",
+					"id": "on-collision-with-another-object",
 					"objectClass": "Player",
-					"sid": 919750061908358,
+					"sid": 610547460954922,
 					"parameters": {
 						"object": "En_Beetle"
 					}
@@ -287,9 +287,57 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 333525922209111,
+					"parameters": {
+						"animation": "\"Hurt\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Player",
+					"sid": 264479849983985,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "En_Beetle.Physics.VelocityY/5"
+					}
+				},
+				{
+					"id": "set-vector-x",
+					"objectClass": "Player",
+					"sid": 367281530745425,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-x": "En_Beetle.Physics.VelocityX*100"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "Player",
+					"sid": 932754442991107,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "wait",
 					"objectClass": "System",
-					"sid": 699926785020741
+					"sid": 721525702079952,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "Player",
+					"sid": 271769276504370,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
 				}
 			],
 			"sid": 591620882828881
@@ -804,6 +852,22 @@
 						"loop": "not-looping",
 						"volume": "0",
 						"tag-optional": "\"Congraduation\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 674762478729099,
+					"parameters": {
+						"seconds": "2.0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 460001423018558,
+					"parameters": {
+						"layout": "Layout 3"
 					}
 				}
 			],
